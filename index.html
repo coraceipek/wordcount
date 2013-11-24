@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+        <head>
+                <title>
+                        Word Count App
+                </title>
+        </head>
+        <body>
+                <input id="js-wordcounter" type="text">                         
+                </input>
+                <div id="js-counter">
+                </div>
+
+                <script>
+                        window.onload = function (){
+                                console.log ("loaded");
+                                var wc = document.getElementById("js-wordcounter");
+                                var counter = document.getElementById("js-counter");
+                                wc.oninput = function (){
+                                console.log (l);
+                                        var l = wc.value.split(" ").length;
+                                        counter.innerHTML = l;
+                                }
+                        }
+                 </script>
+        </body>
+
+</html>
